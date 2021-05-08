@@ -271,12 +271,16 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .row.row-no-gutters > [class^="col-"],
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+   
 }
 
 #bloc-1-hero h1 {
@@ -302,6 +306,8 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    height: 50px ;
+    width: 200px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -702,6 +708,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+   
 }
 
 h2 {
@@ -742,6 +749,10 @@ h4 {
 .portfolio-thumb {
     margin-bottom: 24px;
 }
+.img-book {
+    width: 330px;
+    height: 280px;
+}
 
 .portfolio-row {
     margin-bottom: 44px;
@@ -753,7 +764,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 137, 98);
+    background-color: #368D9B;
     padding: 40px 40px 40px 40px;
 }
 
@@ -773,16 +784,17 @@ h4 {
 }
 
 .tc-white {
+   
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #368D9B ;
+    background: #368D9B;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #367B9B!important;
     color: #FFFFFF!important;
 }
 

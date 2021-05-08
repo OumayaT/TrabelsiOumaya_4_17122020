@@ -1,42 +1,43 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="La chouette agence, entreprise de Web design basée à Lyon, 
-	qui conseille et  accompagne les entreprises dans leurs projets de création de site web et à devenir attractive et visibles sur internet.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+ 
+	<meta charset="utf-8">
+	<title>Contact | La Chouette Agence</title>
+	<!--Ajout keywords-->
+	<meta name="description" content="Contactez La chouette agence située à Lyon, qui s'engage à conseiller et aider les entreprises à réaliser leur projet de Web design peu importe leur importance.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<!--Autorise l'indexationdans moteur recherche-->
 	<meta name="robots" content="index, follow">
-	<meta property="og:title" content="La chouette agence - Entreprise de web design à Lyon">
-	<meta property="og:description" content="Créez votre site web grâce à notre expértise en Web design.
-	 La Chouette Agence vous apporte son expertise pour vous aider à la création ou la refonte de votre site web">
+	<!--Open graph-->
+	<meta property="og:locale" content="fr_FR">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://oumayat.github.io/TrabelsiOumaya_4_17122020/">
+	<meta property="og:title" content="La chouette agence - Entreprise Web design à Lyon">
+	<meta property="og:url" content="https://github.com/OumayaT/TrabelsiOumaya_4_17122020/blob/main/page2.html">
+	<meta property="og:description" content="Contactez-nous, expert en Web design La chouette agence, entreprise situé à Lyon afin de créer votre site.">
 	<meta property="og:image" content="https://github.com/OumayaT/TrabelsiOumaya_4_17122020/blob/main/img/image-de-presentation.jpg">
+	<meta property="og:site_name" content="La chouette agence | Entreprise Webdesign à Lyon">
+	<!--Open graph END-->
+	<!--Twitter cards-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Lachouetteagence">
+	<meta name="twitter:description" content="La chouette agence, entreprise de Web design à Lyon, qui conseille et aide les entreprises à réaliser leur projet.">
+	<meta name="twitter:title" content="La chouette agence | Entreprise Web design à Lyon">
+    <meta name="twitter:image" content="https://github.com/OumayaT/TrabelsiOumaya_4_17122020/blob/main/img/image-de-presentation.jpg" />
+	<meta name="twitter:image:alt" content="Image représentant l'interface de La chouette agence">
+	<!--Twitter cards END-->
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+	<!--Pour prévenir toute duplication-->
+	<link rel="canonical" href="https://github.com/OumayaT/TrabelsiOumaya_4_17122020/blob/main/page2.html">
+	<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&amp;display=swap" rel="stylesheet">
 
-	<link rel="canonical" href="https://oumayat.github.io/TrabelsiOumaya_4_17122020/">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	
-	<!-- Card meta pour Twitter -->
-	<meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@lachouetteagence" />
-	<meta name="twitter:title" content="La Chouette Agence - Entreprise de webdesign à Lyon" />
-	<meta name="twitter:description" content="Entreprise de webdesign située à Lyon, la Chouette Agence vous apporte son expertise pour vous aider à la création ou la refonte de votre site web." />
-    <meta name="twitter:image" content="https://github.com/OumayaT/TrabelsiOumaya_4_17122020/blob/main/img/image-de-presentation.jpg" />
-	
-	<script src="./js/jquery-2.1.0.js" defer></script>
-	<script src="./js/bootstrap.js" defer></script>
-	<script src="./js/blocs.js" defer></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js" defer></script>
 
-	
 
-    <title>Contactez l'équipe La Chouette Agence</title>
- 
 </head>
 <body>
 	<!-- Principal conteneur -->
@@ -82,7 +83,7 @@
 					<h1 class="text-center hero-bloc-text tc-white">
 						Parlons web design !
 					</h1>
-					<p class="text-center mg-lg tc-white tight-width-whitespace">
+					<p class="text-center mg-lg  tight-width-whitespace">
 						Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 						Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 					</p>
@@ -97,31 +98,31 @@
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" action="includes/form_1.php"  method="GET" novalidate success-msg="Your message has been sent." 
-						fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form action="includes/form_1.php" method="post" class="form_1" novalidate="">
 						<div class="form-group">
-							<label>
+							<label for="name">
 								Nom
 							</label>
-							<input id="name" placeholder="Entrez votre nom et prénom" class="form-control" required />
-						</div>
+							<input type="text" id="name" placeholder="Entrez votre nom et prénom" class="form-control" required="">
+						<div class="help-block"></div></div>
 						<div class="form-group">
-							<label>
+							<label for="email">
 								Adresse email
 							</label>
-							<input id="email" class="form-control" placeholder="adresse@mail.com" type="email" required />
-						</div>
+							<input type="email" id="email" placeholder="Entrez une adresse email valide" class="form-control" required="">
+						<div class="help-block"></div></div>
 						<div class="form-group">
-							<label>
-								Comment avez-vous connu La Chouette Agence?
+							<label for="info">
+								Comment connaissez-vous La chouette agence?
 							</label>
-							<input class="form-control" type="email" required id="input_504" />
-						</div>
+							<input class="form-control" type="text" placeholder="Racontez-nous" required="" id="info">
+						<div class="help-block"></div></div>
 						<div class="form-group">
-							<label>
-								Parlez nous de votre projet (Ajoutez autant de détails que nécessaire)<br>
-							</label><textarea id="message" placeholder="Entrez votre message" class="form-control" rows="4" cols="50" required></textarea>
-						</div> 
+							<label for="message">
+								Parlez-nous de votre projet. Ajoutez autant de détails que nécessaire.<br>
+							</label>
+							<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Entrez votre message" required=""></textarea>
+						<div class="help-block"></div></div>
 						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 							Envoyer
 						</button>
@@ -187,12 +188,19 @@
 				</div>
 			</div>
 		</div>
+	
 	</footer>
 	<!-- Footer - bloc-8 END -->
 
 	</div>
 	<!-- Principal conteneur END -->
 		
-
+<!-- Javasrcipt -->
+<script defer="" src="./js/jquery-2.1.0.js" defer ></script>
+<script defer="" src="./js/bootstrap.js" defer ></script>
+<script defer="" src="./js/blocs.js" defer></script>
+<script defer="" src="./js/jqBootstrapValidation.js" defer ></script>
+<script defer="" src="./js/formHandler.js" defer ></script>
+<!-- Javascript - END -->
 </body>
 </html>
