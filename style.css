@@ -745,13 +745,12 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .portfolio-thumb {
     margin-bottom: 24px;
 }
-
 
 .portfolio-row {
     margin-bottom: 44px;
